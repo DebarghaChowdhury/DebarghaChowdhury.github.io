@@ -147,3 +147,27 @@ body{
 .skill-group h3{color:#47e397!important}
 .section .eyebrow,.contact-section .eyebrow{color:#47e397;font-weight:800}
 .metric-card>span{color:#47e397;font-size:20px;font-weight:800;line-height:1;text-shadow:0 0 16px rgba(71,227,151,.35)}
+
+/* Case studies */
+.case-study-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.case-study-card{position:relative;display:flex;flex-direction:column;min-height:640px;border:1px solid var(--line);border-radius:24px;padding:27px;background:linear-gradient(160deg,rgba(13,35,48,.91),rgba(7,19,29,.78));transition:.25s}
+.case-study-card:hover{transform:translateY(-4px);border-color:rgba(57,217,138,.48)}
+.case-study-topline{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:32px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8fb8c5}
+.case-study-topline span{color:#47e397}
+.case-study-topline strong{font-size:10px;color:#c9eef4;font-weight:800}
+.case-study-card h3{font:700 29px "Space Grotesk";letter-spacing:-.03em;line-height:1.12;color:#47e397;margin-bottom:12px}
+.case-study-card>p{color:#9aa7bd;font-size:14px;max-width:680px}
+.case-study-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:22px}
+.case-study-kpis div{min-width:0;border:1px solid rgba(110,210,220,.13);border-radius:14px;padding:13px 12px;background:rgba(255,255,255,.035)}
+.case-study-kpis strong{display:block;font:700 24px "Space Grotesk";line-height:1.05;color:#eefcff;white-space:nowrap}
+.case-study-kpis span{display:block;margin-top:6px;color:#8fb8c5;font-size:10px;line-height:1.35}
+.case-study-sheets{margin-top:22px;border-top:1px solid var(--line);padding-top:18px}
+.case-study-sheets span{display:block;color:#47e397;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.case-study-sheets p{margin-top:8px;color:#90aeb9;font-size:12px;line-height:1.55}
+.case-study-points{margin:20px 0 0 18px;color:#a9bdc8;font-size:13px}
+.case-study-points li+li{margin-top:9px}
+.case-study-card>.tag-row{margin-top:22px}
+.case-study-actions{margin-top:auto;padding-top:22px}
+.case-study-actions .btn-small{padding:10px 16px;font-size:14px;line-height:1.2}
+@media (max-width:900px){.case-study-grid{grid-template-columns:1fr}.case-study-card{min-height:auto}}
+@media (max-width:720px){.case-study-card{padding:23px}.case-study-topline{align-items:flex-start;flex-direction:column;gap:7px;margin-bottom:24px}.case-study-card h3{font-size:25px}.case-study-kpis{grid-template-columns:1fr}.case-study-kpis strong{font-size:22px}}
